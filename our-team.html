@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pride Fusion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right nbar"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Home</a>
+            <a href="#Mentor" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Mentor Match</a>
+            <a href="#Resources" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Resources</a>
+            
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#Mentor" class="w3-bar-item w3-button" onclick="toggleFunction()">Mentor Match</a>
+            <a href="#Resources" class="w3-bar-item w3-button" onclick="toggleFunction()">Resources</a>
+            <a href="our-team.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Meet The Team</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Pride Fusion</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">Pride Fusion</h3>
+        <p class="w3-center"><em>Helping women to break through barriers</em></p>
+        <p> As women in tech, we encounter a unique set of challenges throughout our careers. It can be difficult to deal with 
+            imposter syndrome when starting a new job. It is challenging to find your voice within a male-dominated workspace. 
+            Thats when four full-stack development students came together to try and address this barrier. Pride Fusion is a safe space 
+            for women to gather resources, share stories, and find mentors. 
+        </p>
+        <p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" 
+                class="w3-round w3-image w3-opacity" alt="woman typing at computer"
+                    width="500" height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p><br> The experiences that we go through as women in tech are not unique to us alone. Each one of us has experienced 
+                   negativity and doubt along our journey. Whether you are just starting your journey into tech, or have had a long 
+                   career in the industry, your experiences are valuable and should be shared. 
+                   <br><br>
+                   <b>You are not alone. We are better together.</b>
+                </p>
+            </div>
+        </div>
+      
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+<!-- Our Team Section -->
+<div class="w3-content w3-container w3-padding-64" id="team">
+    <h3 class="w3-center">Meet Our Team</h3>
+    <p class="w3-center"><em>Dedicated LGBTQ Advocates and Mentors</em></p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-col m4">
+            <img src="kate.jpg" class="w3-round w3-image" alt="Jane Doe" style="width:100%;max-width:200px">
+            <h3>Kate</h3>
+            <p>LGBTQ Advocate & Activist</p>
+            <p>Jane is a seasoned advocate with over a decade of experience in LGBTQ rights. She has spearheaded multiple campaigns and has been a voice for the community in various platforms.</p>
+        </div>
+        <div class="w3-col m4">
+            <img src="f22-johnson.jpg" class="w3-round w3-image" alt="John Smith" style="width:100%;max-width:200px">
+            <h3>Johnson Smith</h3>
+            <p>Mental Health Counselor & Mentor</p>
+            <p>John specializes in mental health counseling and has been a mentor for LGBTQ youth for over 5 years. His work focuses on providing support and guidance to those in need.</p>
+        </div>
+        <div class="w3-col m4">
+            <img src="AlexGinoHeadshot-350px.jpg" class="w3-round w3-image" alt="Alex Johnson" style="width:100%;max-width:200px">
+            <h3>Alex Johnson</h3>
+            <p>Trans Rights Advocate</p>
+            <p>Alex is a passionate trans rights advocate who has worked on numerous projects to improve the lives of transgender individuals. Alex's dedication is evident in their tireless efforts for equality.</p>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-col m4">
+            <img src="resize.webp" class="w3-round w3-image" alt="Emily Brown" style="width:100%;max-width:200px">
+            <h3>Emily Brown</h3>
+            <p>Community Organizer & Speaker</p>
+            <p>Emily is known for her community organizing skills and motivational speaking. She has been an integral part of many local and national initiatives aimed at promoting LGBTQ rights.</p>
+        </div>
+        <div class="w3-col m4">
+            <img src="xKd1n1SR_400x400.jpg" class="w3-round w3-image" alt="Chris Lee" style="width:100%;max-width:200px">
+            <h3>Chris Lee</h3>
+            <p>LGBTQ Youth Mentor</p>
+            <p>Chris has dedicated his career to mentoring LGBTQ youth, helping them navigate through challenges and empowering them to achieve their fullest potential.</p>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- Footer end. -->
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
